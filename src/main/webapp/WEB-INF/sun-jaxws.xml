@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoints xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime" version="2.0">
+  <endpoint
+  name="Cart"
+  implementation="gov.iti.jets.soap.webservices.CartService"
+  url-pattern="/ws/CartServices"
+  />
+
+  <endpoint
+  name="Category"
+  implementation="gov.iti.jets.soap.webservices.CategoryService"
+  url-pattern="/ws/CategoryServices"
+  />
+
+  <endpoint
+  name="Order"
+  implementation="gov.iti.jets.soap.webservices.OrderService"
+  url-pattern="/ws/OrderServices"
+  />
+
+  <endpoint
+  name="Product"
+  implementation="gov.iti.jets.soap.webservices.ProductService"
+  url-pattern="/ws/ProductServices"
+  />
+
+  <endpoint
+  name="User"
+  implementation="gov.iti.jets.soap.webservices.UserService"
+  url-pattern="/ws/UserServices"
+  />
+
+
+</endpoints>

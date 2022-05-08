@@ -1,0 +1,199 @@
+GET /restful/api/categories HTTP/1.1
+Host:localhost:9797
+Accept: application/json
+###
+GET /restful/api/users HTTP/1.1
+Host:localhost:9797
+Accept: application/json
+
+###
+GET /restful/api/categories/1/products HTTP/1.1
+Host:localhost:9797
+Accept: application/json
+
+###
+
+POST  /restful/api/products HTTP/1.1
+Host:localhost:9797
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name"  : "product" ,
+    "price" : 12 ,
+    "categoryId" : 1
+
+}
+
+###
+POST  /restful/api/categories HTTP/1.1
+Host:localhost:9797
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name" : "home care"
+}
+###
+GET /restful/api/users HTTP/1.1
+Host:localhost:9797
+Accept: application/json
+###
+POST  /restful/api/users HTTP/1.1
+Host:localhost:9797
+Content-Type: application/json
+Accept: application/json
+
+{
+    "userName" : "snnoo" ,
+    "password" : "1111" , 
+    "email" : "nomjloocjk@dd.com" ,
+    "address" : "cairo" , 
+    "wallet" : 1222.0
+}
+    
+###
+DELETE  /restful/api/products/4 HTTP/1.1
+Host:localhost:9797
+Accept: text/plain
+
+###
+
+DELETE  /restful/api/products HTTP/1.1
+Host:localhost:9797
+Accept: text/plain
+
+###
+PUT  /restful/api/products/16 HTTP/1.1
+Host:localhost:9797
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name"  : "body mist" ,
+    "price" : 155 ,
+    "categoryId" : 9
+   
+}
+
+###
+PUT  /restful/api/products/10 HTTP/1.1
+Host:localhost:9797
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name"  : "body mist" ,
+    "price" : 155
+   
+}
+###
+GET /restful/api/products?name=body mist HTTP/1.1
+Host: localhost:9797
+Accept: application/json
+
+###
+GET /restful/api/date/tomorrow HTTP/1.1
+Host: localhost:9797
+Accept: application/json
+###
+GET /restful/api/carts  HTTP/1.1
+Host: localhost:9797
+Accept: application/json
+###
+GET /restful/api/carts/users/2  HTTP/1.1
+Host: localhost:9797
+Accept: text/plain
+
+###
+GET /restful/api/orders/users/3  HTTP/1.1
+Host: localhost:9797
+Accept: text/plain
+
+
+###
+POST  /restful/api/orders/users/3  HTTP/1.1
+Host: localhost:9797
+Accept: application/json
+
+
+###
+GET /restful/api/carts/users/2 HTTP/1.1
+Host:localhost:9797
+Accept: text/plain
+
+###
+GET /restful/api/orders/delivered HTTP/1.1
+Host:localhost:9797
+Accept: text/plain
+
+###
+POST /restful/api/employees HTTP/1.1
+Host:localhost:9797
+Content-Type: text/plain
+
+Employee [id=123, name=sondos, age=20]
+
+###
+
+DELETE  /restful/api/carts/users/6/cartItems/3 HTTP/1.1
+Host:localhost:9797
+Accept: text/plain
+
+###
+
+PUT  /restful/api/orders/4?state=delivered HTTP/1.1
+Host:localhost:9797
+Content-Type: application/json
+Accept: application/json
+
+###
+GET /restful/api/users HTTP/1.1
+Host:localhost:9797
+Accept : application/json
+
+###
+GET /restful/api/users/3 HTTP/1.1
+Host:localhost:9797
+Accept : application/json
+
+###
+GET /restful/api/users?email=nooo@dd.com HTTP/1.1
+Host:localhost:9797
+Accept: application/json
+
+###
+GET /restful/api/users/2  HTTP/1.1
+Host: localhost:9797
+Accept:  application/json
+
+###
+
+POST  /restful/api/users/4/cart HTTP/1.1
+Host:localhost:9797
+Content-Type: application/json
+Accept: application/json
+
+{
+   "productId" : 11 ,
+   "quantity" : 2
+}
+###
+POST  /restful/api/carts/3 HTTP/1.1
+Host:localhost:9797
+Content-Type: application/json
+Accept: application/json
+
+{
+   "productId" : 12 ,
+   "quantity" : 2
+}
+###
+GET /restful/api/users/3  HTTP/1.1
+Host: localhost:9797
+Accept: application/json
+
+###
+POST /restful/api/users/3/checkout  HTTP/1.1
+Host: localhost:9797
+Accept: application/json
