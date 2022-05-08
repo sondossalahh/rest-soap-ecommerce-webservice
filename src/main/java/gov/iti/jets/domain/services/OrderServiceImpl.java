@@ -24,18 +24,6 @@ public class OrderServiceImpl {
     public List<Order> getAllOrders() {
         TypedQuery<Order> query = entityManager.createQuery("select m from Order m", Order.class);
         List<Order> orders = query.getResultList();
-        // List<OrderDto> orderDtos = new ArrayList<>();
-        // OrderDto orderDto = new OrderDto();
-        // for (Order order : orders) {
-        //     orderDto.setLineItemList(order.getLineItemList());
-        //     orderDto.setOrderStatus(order.getOrderStatus());
-        //     orderDto.setOrderTime(order.getOrderTime());
-        //     orderDto.setTotalPrice(order.getTotalPrice());
-        //     orderDto.setUser(order.getUser());
-        //     orderDto.setId(order.getId());
-        //     orderDtos.add(orderDto);
-            
-        // }
         return orders;
     }
    
