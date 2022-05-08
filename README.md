@@ -2,7 +2,6 @@
  
 # Features
 <b> Customer can </b>
-  - Sign in.
   - Sign up.
   - Get all products.
   - Get products by id.
