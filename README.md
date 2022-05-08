@@ -2,7 +2,6 @@
  
 # Features
 <b> Customer can </b>
-  - Sign in.
   - Sign up.
   - Get all products.
   - Get products by id.
@@ -16,6 +15,7 @@
 
 <b> Admin can </b>
   - Get all users.
+  - Add a user
   - change privellege of the user (Admin/Clerk/Customer).
  
 <b> clerk can </b>
