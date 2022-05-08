@@ -15,6 +15,7 @@
 
 <b> Admin can </b>
   - Get all users.
+  - Add a user
   - change privellege of the user (Admin/Clerk/Customer).
  
 <b> clerk can </b>
